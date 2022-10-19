@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1 style="font-size:50px;text-align:center">Housing Price Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	    Area: <input type="number" name="Area", placeholder="Enter area" required/>
+            <br><br>
+            Bedrooms: <input type="number" name="Bedroom", placeholder="Enter number of bedrooms" required/>
+            <br><br>
+            Bathrooms: <input type="number" name="Bathrooms", placeholder="Enter number of bathrooms" required/>
+            <br><br>
+            Stories: <input type="number" name="Stories", placeholder="Enter number of stories" required/>
+            <br><br>
+            Mainroad: <input type="number" name="Mainroad", placeholder="yes-1 or no-0" required/>
+            <br><br>
+            Guestroom: <input type="number" name="Guestroom", placeholder="yes-1 or no-0" required/>
+            <br><br>
+            Basement: <input type="number" name="Basement", placeholder="yes-1 or no-0" required/>
+            <br><br>
+            Hotwatering: <input type="number" name="Hotwatering", placeholder="yes-1 or no-0" required/>
+            <br><br>
+            Airconditioning: <input type="number" name="Airconditioning", placeholder="yes-1 or no-0" required/>
+            <br><br>
+            Parking: <input type="number" name="Parking", placeholder="Enter number of parking spots" required/>
+            <br><br>
+            Prefarea: <input type="number" name="Prefarea", placeholder="yes-1 or no-0" required/>
+            <br><br>
+            Semi-furnished: <input type="number" name="Semi-furnished", placeholder="yes-1 or no-0" required/>
+            <br><br>
+            Unfurnished: <input type="number" name="Unfurnished", placeholder="yes-1 or no-0" required/>
+            <br><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+    <br>
+    <br>
+    {{ prediction_text }}
+    <br>
+    <br>
+
+ </div>
+ <div style="text-align:center">
+   <h2 style="font-size:30px;text-align:center">Model graph is shown below</h2>
+   <centre><img src="{{ url_for('static', filename='IMG/model_graph.png') }}" alt="Model graph" height="390" width="600"></centre>
+</div>
+</body>
+</html>
+
+
+
+
