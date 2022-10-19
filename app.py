@@ -8,9 +8,6 @@ from flask import Flask, request, jsonify, render_template
 app = Flask(__name__)
 model = clf = joblib.load("clf.pkl")
 
-
-
-
 @app.route("/")
 def Home():
     return render_template("website.html")
@@ -24,6 +21,3 @@ def predict():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-
