@@ -1,12 +1,11 @@
 import joblib
-import os
 
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 
 # Create flask app
 app = Flask(__name__)
-model = clf = joblib.load("clf.pkl")
+model = joblib.load("clf.pkl")
 
 @app.route("/")
 def Home():
