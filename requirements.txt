@@ -9,5 +9,5 @@ joblib==1.2.0
 pandas==1.5.1
 numpy==1.23.4
 matplotlib==3.6.1
-seaborn==0.12.1
+seaborn==0.12.0
 sklearn==0.0
