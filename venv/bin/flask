@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/Users/apps/Desktop/Linear Regression/venv/bin/python3" "$0" "$@"
+'''exec' "/Users/apps/Desktop/Linear Regression/venv/bin/python" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re
