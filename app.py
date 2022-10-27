@@ -1,14 +1,10 @@
 
 import joblib
 import numpy as np
-from flask import Flask, request, jsonify, render_template,Response
-import json
-import plotly
-import plotly.express as px
+from flask import Flask, request, jsonify, render_template
 import matplotlib.pyplot as plt
 import pandas as pd
 import base64
-from io import BytesIO
 from matplotlib.figure import Figure
 import io
 import base64
