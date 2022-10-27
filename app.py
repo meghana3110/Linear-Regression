@@ -1,7 +1,7 @@
 
 import joblib
 import numpy as np
-from flask import Flask, request, jsonify, render_template,Response, send_file
+from flask import Flask, request, jsonify, render_template,Response
 
 # Create flask app
 app = Flask(__name__)
