@@ -11,5 +11,4 @@ matplotlib==3.6.1
 seaborn==0.12.0
 sklearn==0.0
 gunicorn==20.1.0
-io==0.0.1
 pybase64==1.2.3
