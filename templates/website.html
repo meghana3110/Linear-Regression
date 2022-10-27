@@ -11,7 +11,7 @@
 	<header style="font-size:50px;text-align:center;background-color: beige;" >Housing Price Prediction</header>
 
     <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}" method="post"  style="text-align:center">
+    <form action="{{ url_for('predict' )}}" method="post"  style="text-align:center">
             <br>
     	      Area: <input type="number" name="Area", placeholder="Enter area in sqft" required/>
             <br><br>
@@ -41,15 +41,15 @@
             <br><br>
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+      
     </form>
     
     <br>
     <br><b>
-    {{ prediction_text }}</b>
+    {{ prediction_text}}</b>
     <br>
+    <img src="{{ image }}"/>
     
-    
-
   </div>
   <div style="text-align:center">
     <h2 style="font-size:30px;text-align:center;background-color: beige;">Different Graphs</h2>
@@ -57,8 +57,9 @@
   </div>
   
 </body>
+
 <!-- style="background-image: url('static/IMG/house.jpg');background-repeat: no-repeat;background-size: 100%; -->
- <!-- <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<!-- <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'> -->
